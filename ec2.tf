@@ -1,5 +1,5 @@
 resource "aws_security_group" "allow-ssh" {
-  name        = "allow-ssh"
+  name        = "allow-sshkk"
   description = "creating sg for terraform"
 
   tags = {
