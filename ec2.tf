@@ -26,7 +26,6 @@ resource "aws_security_group" "allow-ssh" {
 
 resource "aws_instance" "terra" {
   ami                     = var.ami_id
-  for_each = var.instances
   instance_type           = lookup(var.instances, terraform.workspace)
   vpc_security_group_ids = [aws_security_group.allow-ssh.id]
   tags = {

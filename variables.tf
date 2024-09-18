@@ -7,8 +7,7 @@ variable "instances" {
     type = map
     default = {
         dev = "t2.micro"
-        prod = "t2.micro"
-        
+        prod = "t2.micro"  
     }
   
 }
